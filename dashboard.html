@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRBANK-HUB</title>
+
+  <!-- Fix: make sure the CSS path is correct -->
+  <!-- If your css is in assets/css/style.css use this: -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- If your css is really in the same folder as this file, keep: href="style.css" -->
+</head>
+<body>
+
+<main class="page">
+  <section class="auth-card">
+    <div class="auth-top">
+      <h1 class="brand">Partner Rural Bank</h1>
+
+      <div class="tabs">
+        <span class="tab active" aria-current="page">Dashboard</span>
+
+        <!-- Fix: use a button for logout -->
+        <button type="button" class="tab" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div class="auth-content">
+      <h2 class="title" style="font-size: clamp(30px, 4vw, 54px);">Welcome!</h2>
+      <p class="helper" id="userInfo" style="font-size:20px;"></p>
+    </div>
+  </section>
+</main>
+
+<!-- Good: defer is correct -->
+<script src="dashboard.js" defer></script>
+
+</body>
+</html>

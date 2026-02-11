@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRBANK-HUB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="page">
+  <section class="auth-card">
+
+    <div class="auth-top">
+      <h1 class="brand">Partner Rural Bank</h1>
+
+      <div class="tabs">
+        <a href="index.html" class="tab">Log In</a>
+        <a href="register.html" class="tab active">Register</a>
+      </div>
+    </div>
+
+    <div class="auth-content align-left">
+      <h2 class="title">Create Account</h2>
+
+      <form class="form form-left" id="registerForm">
+  <div class="field">
+    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+  </div>
+
+  <div class="field">
+    <input type="email" id="regEmail" name="regEmail" placeholder="Email" required />
+  </div>
+
+  <div class="field">
+    <input type="password" id="regPassword" name="regPassword" placeholder="Password" required />
+  </div>
+
+  <div class="field">
+    <input type="text" id="roleId" name="roleId" placeholder="Role_ID" required />
+  </div>
+
+  <button class="btn btn-left" type="submit">Register</button>
+
+  <p class="msg" id="regMsg"></p>
+</form>
+
+    </div>
+
+  </section>
+</main>
+
+<script src="register.js" defer></script>
+
+</body>
+</html>

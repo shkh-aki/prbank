@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRBANK-HUB</title>
+
+  <!-- ✅ Correct CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="page">
+  <section class="auth-card">
+
+    <div class="auth-top">
+      <h1 class="brand">Partner Rural Bank</h1>
+
+      <div class="tabs">
+        <a href="index.html" class="tab active">Log In</a>
+        <a href="register.html" class="tab">Register</a>
+      </div>
+    </div>
+
+    <div class="auth-content">
+      <h2 class="title">Welcome Back</h2>
+
+      <form class="form" id="loginForm">
+        <div class="field">
+          <input type="email" id="loginEmail" placeholder="Email Address" required />
+        </div>
+
+        <div class="field">
+          <input type="password" id="loginPassword" placeholder="Password" required />
+        </div>
+
+        <button class="btn" type="submit">Log In</button>
+
+        <p class="helper">
+          Forgot password?
+          <a href="forgotpassword.html">Click Here</a>
+        </p>
+
+        <p class="msg" id="loginMsg"></p>
+      </form>
+    </div>
+
+  </section>
+</main>
+
+<!-- ✅ Correct JS -->
+<script src="index.js" defer></script>
+
+</body>
+</html>

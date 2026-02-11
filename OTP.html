@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRBANK-HUB</title>
+
+  <!-- Use your existing CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="page">
+  <section class="auth-card">
+
+    <div class="auth-top">
+      <div class="brand">Partner Rural Bank</div>
+
+      <div class="tabs">
+        <a href="forgot.html" class="tab">Back</a>
+        <a href="#" class="tab active">OTP</a>
+      </div>
+    </div>
+
+    <div class="auth-content">
+      <h1 class="title">Forgot Password</h1>
+
+      <form class="form" id="otpForm" autocomplete="off">
+        <div class="field">
+          <input
+            type="text"
+            id="otp"
+            placeholder="Enter OTP"
+            inputmode="numeric"
+            maxlength="6"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn">Enter</button>
+
+        <p class="helper" id="msg"></p>
+
+        <p class="helper">
+          Didn’t receive OTP?
+          <a href="forgot.html">Go back and generate again</a>
+        </p>
+      </form>
+    </div>
+
+  </section>
+</main>
+
+<script src="otp.js" defer></script>
+</body>
+</html>
+s
